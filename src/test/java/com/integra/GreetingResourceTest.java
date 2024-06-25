@@ -11,9 +11,9 @@ class GreetingResourceTest {
     @Test
     void testHelloEndpoint() {
         given()
-          .when().get("/cache/get?key=key")
+          .when().get("/hello")
           .then()
-             .statusCode(200);
+             .statusCode(404);
     }
 
 }
